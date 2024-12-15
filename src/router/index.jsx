@@ -1,6 +1,5 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Home from '../pages/Home';
 import Auth from '../pages/auth/Auth';
 import Dashboard from '../components/dashboard/Dashboard';
 import Profile from '../pages/dashboard/profile/Profile';

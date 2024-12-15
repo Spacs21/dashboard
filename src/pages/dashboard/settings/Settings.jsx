@@ -2,7 +2,9 @@ import React from 'react'
 
 const Settings = () => {
   return (
-    <div>Settings</div>
+    <div className='flex justify-center items-center'>
+      <h2>Settings... (not finished)</h2>
+    </div>
   )
 }
 

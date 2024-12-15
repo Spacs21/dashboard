@@ -58,7 +58,8 @@ const Dashboard = () => {
   
 
   return (
-    <div className="flex min-h-screen bg-gradient-to-br from-[#0f1535] to-[#0b1027] text-white">
+    <>
+    <div className="flex min-h-screen bg-gradient-to-br from-[#0f1535] to-[#0b1027] text-white justify-center">
       <div className="w-64 h-screen bg-gradient-to-b from-[#0b1535] to-[#0b1027] fixed left-0 top-0 p-6 border-r border-[#ffffff1a]">
         <div className="flex items-center gap-2 mb-8">
           <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -128,8 +129,11 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
+      <div>
+      </div>
       <Outlet/>
     </div>
+    </>
   )
 }
 
