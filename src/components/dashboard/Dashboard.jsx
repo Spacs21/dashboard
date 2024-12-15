@@ -18,6 +18,7 @@ import {
 } from 'chart.js'
 import axios from 'axios'
 import { useStore } from '../../zustand'
+import Modal from '../../pages/dashboard/model/Model';
 
 ChartJS.register(
   CategoryScale,
@@ -98,17 +99,14 @@ const Dashboard = () => {
             <h3 className="px-3 text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">
               ACCOUNT PAGES
             </h3>   
+            {/* { icon: FaUser, text: 'Profile' },
+            { icon: FaSignInAlt, text: 'Logout' }, */}
             <div className="space-y-1">
-              {[
-                { icon: FaUser, text: 'Profile' },
-                { icon: FaSignInAlt, text: 'Sign In' },
-                { icon: FaUserPlus, text: 'Sign Up' },
-              ].map((item, index) => (
-                <a key={index} href="#" className="flex items-center gap-3 px-3 py-2 text-sm rounded-lg text-gray-400 hover:bg-blue-500/10 hover:text-blue-500">
-                  <item.icon className="w-4 h-4" />
-                  {item.text}
-                </a>
-              ))}
+                <NavLink className="flex items-center gap-3 px-3 py-2 text-sm rounded-lg text-gray-400 hover:bg-blue-500/10 hover:text-blue-500">
+                  <FaUser className="w-4 h-4" />
+                  Profile
+                </NavLink>
+                <Modal onLogout={onLogout}/>
             </div>
           </div>
         </nav>

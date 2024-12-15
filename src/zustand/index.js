@@ -6,5 +6,8 @@ export const useStore = create((set) => ({
     localStorage.setItem("token", payload)
     return {token: payload}
   }),
-  logout: () => set({token: null}),
+  logout: () => set(()=>{
+    localStorage.removeItem("token")
+    return {token: null}
+  }),
 }))
