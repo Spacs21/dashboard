@@ -14,7 +14,7 @@ const Router = () => {
   return (
     <Routes>
       <Route path="/" element={<Layout/>}>
-        <Route index element={<Home />} />
+        <Route index element={<Login/>} />
       </Route>
       <Route path="/" element={<Auth/>}>
         <Route path="dashboard" element={<Dashboard/>}>
